@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moving Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Moving Cost Calculator</h2>
+      <form id="moving-cost-form">
+        <div class="form-group">
+          <label for="from-zip">Moving From ZIP:</label>
+          <input type="text" id="from-zip" name="from-zip" required />
+        </div>
+        <div class="form-group">
+          <label for="to-zip">Moving To ZIP:</label>
+          <input type="text" id="to-zip" name="to-zip" required />
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">Number of Bedrooms:</label>
+          <select id="bedrooms" name="bedrooms" required>
+            <option value="1">1 Bedroom</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3 Bedrooms</option>
+            <option value="4">4 Bedrooms</option>
+            <option value="5">5+ Bedrooms</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="packing-services">Packing Services:</label>
+          <select id="packing-services" name="packing-services">
+            <option value="none">None</option>
+            <option value="partial">Partial</option>
+            <option value="full">Full</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="move-date">Move Date:</label>
+          <input type="date" id="move-date" name="move-date" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Calculate</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

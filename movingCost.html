@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arden Moving</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo.png" alt="Brand Icon"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/services.html"
+                >Services</a
+              >
+            </li>
+          </ul>
+          <h5>
+            <i class="fa fa-phone" style="font-size: 32px; color: green"></i>
+            (925)690-2325
+          </h5>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Moving Cost Calculator</h2>
+      <form id="moving-cost-form">
+        <div class="form-group">
+          <label for="from-zip">Moving From ZIP:</label>
+          <input type="text" id="from-zip" name="from-zip" required />
+        </div>
+        <div class="form-group">
+          <label for="to-zip">Moving To ZIP:</label>
+          <input type="text" id="to-zip" name="to-zip" required />
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">Number of Bedrooms:</label>
+          <select id="bedrooms" name="bedrooms" required>
+            <option value="1">1 Bedroom</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3 Bedrooms</option>
+            <option value="4">4 Bedrooms</option>
+            <option value="5">5+ Bedrooms</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="packing-services">Packing Services:</label>
+          <select id="packing-services" name="packing-services">
+            <option value="none">None</option>
+            <option value="partial">Partial</option>
+            <option value="full">Full</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="move-date">Move Date:</label>
+          <input type="date" id="move-date" name="move-date" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Calculate</button>
+        </div>
+      </form>
+      <div id="pricing-info">
+        <h3>Pricing Information</h3>
+        <p><strong>1 Bedroom:</strong> $1000 - $1200</p>
+        <p><strong>2 Bedrooms:</strong> $1500 - $1800</p>
+        <p><strong>3 Bedrooms:</strong> $2000 - $2400</p>
+        <p><strong>4 Bedrooms:</strong> $2500 - $3000</p>
+        <p><strong>5+ Bedrooms:</strong> $3000 - $3600</p>
+        <p>Packing Services:</p>
+        <ul>
+          <li>Partial Packing: $500 - $600</li>
+          <li>Full Packing: $1000 - $1200</li>
+        </ul>
+        <p>
+          Note: Prices are estimates and may vary depending on various factors.
+        </p>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+      <p style="text-align: center">
+        All rights reserved &copy; 2014 Arden Moving Company
+      </p>
+    </footer>
+  </body>
+</html>
