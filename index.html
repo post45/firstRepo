@@ -25,6 +25,15 @@
         height: 30px;
       }
     </style>
+    <style>
+    /* Adjust image size for phone-sized screens */
+    @media (max-width: 576px) {
+        .carousel-item img {
+            width: 100%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
+</style>
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
@@ -56,12 +65,12 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"><h5>Home</h5></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html"><h5>About</h5></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="services.html"><h5>Services</h5></a>
-            </li>
+             <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="about.html"><h5>About</h5></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="services.html"><h5>Services</h5></a>
+    </li>
              </ul>
           <h5>
             <i class="fa fa-phone" style="font-size: 32px; color: green"></i>
